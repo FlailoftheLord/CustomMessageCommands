@@ -1,0 +1,5 @@
+name: CustomMessageCommands
+author: FlailoftheLord
+website: https://www.github.com/flailofthelord
+version: 1.0
+main: me.flail.cmc.CMC
