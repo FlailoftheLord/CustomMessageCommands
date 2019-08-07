@@ -31,13 +31,13 @@ public class Settings extends Logger {
 		List<String> list = new ArrayList<>();
 
 		list.add("----------------");
-		list.add("discord link here");
+		list.add("&cdiscord link here");
 		list.add("----------------");
-		values.put("discord", list);
+		values.put("discord", list.toArray());
 		list.clear();
 
 		list.add("yes");
-		values.put("no", list);
+		values.put("nope", list.toArray());
 		list.clear();
 
 		setValues(settings, values);
@@ -59,7 +59,7 @@ public class Settings extends Logger {
 			"                                                                  #\r\n" +
 			"==================================================================#\r\n" +
 			"-----------------------------------------------------------------\r\n" +
-			"- - -\r\n";
+			"- - - Supports Chat Color codes.\r\n";
 
 	protected void setValues(DataFile file, Map<String, Object> values) {
 		for (String key : values.keySet()) {

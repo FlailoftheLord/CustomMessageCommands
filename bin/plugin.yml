@@ -1,4 +1,5 @@
 name: CustomMessageCommands
+prefix: CMC
 author: FlailoftheLord
 website: https://www.github.com/flailofthelord
 version: 1.0
