@@ -30,6 +30,10 @@ public class Settings extends Logger {
 		Map<String, Object> values = new HashMap<>();
 		List<String> list = new ArrayList<>();
 
+		list.add("&aReloaded Custom Message Commands!");
+		values.put("cmcreload", list.toArray());
+		list.clear();
+
 		list.add("----------------");
 		list.add("&cdiscord link here");
 		list.add("----------------");

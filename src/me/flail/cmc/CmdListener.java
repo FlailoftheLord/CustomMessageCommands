@@ -16,6 +16,9 @@ public class CmdListener extends Logger {
 
 	public boolean run(CommandSender sender) {
 		if (plugin.commands.contains(cmdLabel.toLowerCase())) {
+			if (cmdLabel.equalsIgnoreCase("cmcreload")) {
+				plugin.reload();
+			}
 
 			List<String> cmdMessage = plugin.settings.file().getList(cmdLabel);
 			for (String line : cmdMessage) {

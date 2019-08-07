@@ -31,6 +31,10 @@ public class CMC extends JavaPlugin {
 		registerCommands();
 	}
 
+	public void reload() {
+		onEnable();
+	}
+
 	public void registerCommands() {
 		new Logger().console("&aRegistered Custom Message Commands:");
 
