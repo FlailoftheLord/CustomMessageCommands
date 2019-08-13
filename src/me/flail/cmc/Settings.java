@@ -32,17 +32,6 @@ public class Settings extends Logger {
 
 		list.add("&aReloaded Custom Message Commands!");
 		values.put("cmcreload", list.toArray());
-		list.clear();
-
-		list.add("----------------");
-		list.add("&cdiscord link here");
-		list.add("----------------");
-		values.put("discord", list.toArray());
-		list.clear();
-
-		list.add("yes");
-		values.put("nope", list.toArray());
-		list.clear();
 
 		setValues(settings, values);
 	}

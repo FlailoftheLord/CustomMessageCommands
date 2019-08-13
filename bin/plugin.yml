@@ -2,5 +2,10 @@ name: CustomMessageCommands
 prefix: CMC
 author: FlailoftheLord
 website: https://www.github.com/flailofthelord
-version: 1.0
+version: 1.1
 main: me.flail.cmc.CMC
+
+permissions:
+  cmc.reload:
+    default: op
+    description: permission to reload the plugin's settings.

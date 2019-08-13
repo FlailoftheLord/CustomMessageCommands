@@ -17,7 +17,11 @@ public class CmdListener extends Logger {
 	public boolean run(CommandSender sender) {
 		if (plugin.commands.contains(cmdLabel.toLowerCase())) {
 			if (cmdLabel.equalsIgnoreCase("cmcreload")) {
-				plugin.reload();
+				if (sender.hasPermission("cmc.reload")) {
+					plugin.reload();
+				} else {
+					sender.sendMessage(chat("&cYou don't have permission for that!"));
+				}
 			}
 
 			List<String> cmdMessage = plugin.settings.file().getList(cmdLabel);
